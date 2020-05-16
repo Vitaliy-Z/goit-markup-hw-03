@@ -1,0 +1,180 @@
+/* 
+Шрифты: 
+Raleway 700 
+Roboto 400, 500, 700, 900
+*/
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+/* Сброс */
+.site-nav,
+.features ul,
+.activity ul,
+.teams ul,
+.clients ul,
+.footer ul {
+  list-style-type: none;
+}
+
+/* Наведения и фокус */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .contact:hover,
+.site-nav .contact:focus {
+  color: var(--accent-text-color);
+}
+.features .link:hover,
+.features .link:focus,
+.teams .link:hover,
+.teams .link:focus,
+.clients .link:hover,
+.clients .link:focus,
+.social .link:hover,
+.social .link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+/* Главная страница */
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03px;
+}
+.logo .accent {
+  color: var(--accent-text-color);
+}
+
+/* Навигация сайта*/
+.site-nav .link {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02px;
+}
+.site-nav .contact {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02px;
+}
+/* Герой */
+.hero {
+  text-align: center;
+}
+.hero-text {
+  /* color: var(--primary-white-color); */
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06px;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06px;
+}
+
+/* Контент */
+.title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03px;
+}
+.title-text {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
+}
+.activity .title-text {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+}
+.teams {
+  background-color: #f5f4fa;
+}
+
+/* Подвал */
+.footer {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: normal;
+}
+.footer .logo {
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.address {
+  color: rgb(255, 255, 255, 0, 6);
+}
+.address-text {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+.address .link {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
+}
+.copyright {
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
