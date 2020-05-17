@@ -90,8 +90,8 @@ body {
 
 /* Навигация сайта*/
 
-.main-nav,
-.header-nav {
+.header-nav,
+.main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,40 +274,47 @@ body {
 
 .footer {
   padding-top: 48px;
-  color: #ffffff;
-  background-color: #2f303a;
+
   font-weight: normal;
+  color: #ffffff;
+
+  background-color: #2f303a;
 }
+
 .footer .logo {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
 }
+
 .address {
   margin-top: 10px;
+
   line-height: 1.7;
   color: rgb(255, 255, 255, 0, 6);
 }
+
 .address-text {
-  color: var(--primary-white-color);
   font-style: normal;
+  color: var(--primary-white-color);
 }
+
 .address .link {
-  text-decoration: none;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03px;
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
+
 .footer-title {
   margin-bottom: 21px;
 
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03px;
   text-transform: uppercase;
 }

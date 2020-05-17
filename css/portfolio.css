@@ -12,6 +12,14 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
 }
+
+.container {
+  margin: 0 auto 94px auto;
+  width: 1600px;
+  padding: 0 200px;
+  outline: 2px solid tomato;
+}
+
 /* Сброс */
 .site-nav,
 .filter ul,
@@ -22,17 +30,32 @@ body {
   text-decoration: none;
 }
 
+.site-nav,
+.filter .elements,
+.works .elements,
+.works .title-text,
+.works .text,
+.works .hf-text,
+.address ul,
+.social .elements {
+  margin: 0;
+  padding: 0;
+}
+
 /* Наведения и фокус */
 .filter .button:hover,
 .filter .button:focus {
   color: var(--primary-white-color);
 }
+
 .filter .button:hover,
 .filter .button:focus,
 .social .link:hover,
 .social .link:focus {
   background-color: var(--accent-text-color);
 }
+
+.logo .accent,
 .site-nav .link.current,
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -40,8 +63,28 @@ body {
 .site-nav .contact:focus {
   color: var(--accent-text-color);
 }
-/* Главная страница */
+
+/* Навигация сайта*/
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav .elements {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav .site-nav {
+  display: flex;
+}
+
 .logo {
+  margin-right: 86px;
+
   color: var(--title-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -51,21 +94,29 @@ body {
   line-height: 31px;
   letter-spacing: 0.03px;
 }
-.logo .accent {
-  color: var(--accent-text-color);
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
-/* Навигация сайта*/
 .site-nav .link {
+  display: block;
+  padding: 32px 0;
+
   text-decoration: none;
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.7px;
   letter-spacing: 0.02px;
 }
+
+.site-nav .link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .contact {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -77,8 +128,31 @@ body {
   letter-spacing: 0.02px;
 }
 
-/* Кнопк фильта */
+.main-nav > .site-nav li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Контент страницы */
+
+.page {
+  background-color: #e5e5e5;
+}
+
+/* Кнопки фильта */
+
+.filter .elements {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter .button {
+  padding: 6px 22px;
+  margin-bottom: 50px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -88,10 +162,33 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--primary-bg-button-color);
+
   border: none;
+  border-radius: 4px;
 }
 
 /* Контент страницы portfolio */
+
+.works .elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works .item {
+  width: calc((100% - 60px) / 3);
+}
+
+.works .item:not(:nth-child(3n)) {
+  margin: 0 30px 30px 0;
+}
+.works .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.works .title {
+  padding: 20px 24px;
+}
+
 .works .title-text {
   font-weight: bold;
   font-size: 18px;
@@ -107,6 +204,8 @@ body {
   color: var(--primary-text-color);
 }
 .works .hf-text {
+  padding: 0 24px;
+
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
@@ -116,43 +215,80 @@ body {
 }
 /* Подвал */
 .footer {
+  padding-top: 48px;
+
   color: #ffffff;
   background-color: #2f303a;
   font-weight: normal;
 }
+
+.footer .elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
 .footer .logo {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
 }
+
 .address {
+  margin-top: 10px;
+
+  line-height: 1.6;
   color: rgb(255, 255, 255, 0, 6);
 }
+
 .address-text {
   color: var(--primary-white-color);
   font-style: normal;
 }
+
 .address .link {
   text-decoration: none;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03px;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-title {
+  margin-bottom: 21px;
+
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03px;
   text-transform: uppercase;
 }
+
+.social .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social .link:not(:last-child) {
+  margin-right: 11px;
+}
+
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+
   font-weight: normal;
   font-size: 12px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03px;
   color: rgba(255, 255, 255, 0.4);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
