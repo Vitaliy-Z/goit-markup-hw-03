@@ -31,11 +31,14 @@ body {
 .site-nav,
 .hero-text,
 .features > ul,
-.teams > ul,
+.features .text,
+.activity > ul,
+.teams ul,
 .clients > ul,
 .address > ul,
 .social > ul,
-.copyright {
+.footer-title,
+.copyright p {
   margin: 0px;
   padding: 0px;
 }
@@ -66,11 +69,12 @@ body {
   margin: 0 auto 94px auto;
   width: 1600px;
   padding: 0 200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Главная страница */
 .logo {
+  display: block;
   color: var(--title-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -85,8 +89,31 @@ body {
 }
 
 /* Навигация сайта*/
+
+.main-nav,
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin-right: 86px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
-  text-decoration: none;
+  display: block;
+  padding: 32px 0;
+
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -94,7 +121,18 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02px;
+
+  text-decoration: none;
 }
+
+.site-nav .item-contact:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-conact {
+  display: block;
+}
+
 .site-nav .contact {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -137,14 +175,16 @@ body {
 }
 
 /* Контент */
+
 .title {
   margin-top: 0;
   margin-bottom: 50px;
+  text-align: center;
+
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03px;
 }
 .title-text {
@@ -153,23 +193,62 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03px;
+
   text-transform: uppercase;
 }
+/* Наши преимущества */
+
+.elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .item {
+  flex-basis: 78px;
+}
+
 .features .link {
-  padding: 60px 139px;
-  border-radius: 4px;
+  padding: 25px 104px;
+
   background-color: #f5f4fa;
+
+  border-radius: 4px;
+}
+
+.features .title-text {
+  margin: 30px 0 10px;
+}
+
+.features .text {
+}
+
+/* Чем мы занимаемся */
+
+.elements {
+  display: flex;
+  justify-content: space-between;
 }
 
 .activity .title-text {
+  padding: 27px;
+
   color: var(--primary-white-color);
   background-color: var(--primary-text-color);
+  text-align: center;
 }
+
+/* Наша команда */
 
 .teams {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: #f5f4fa;
+}
+
+.teams .item {
+  width: 278px;
+  text-align: center;
 }
 
 .teams .title-text {
@@ -177,12 +256,22 @@ body {
   margin-bottom: 10px;
 }
 
-.teams .link {
-  padding: 24px;
-  border-radius: 24px;
+.teams .elements .elements {
+  justify-content: center;
 }
 
+.teams .link,
+.social .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+/* Постоянные клиенты */
+
 /* Подвал */
+
 .footer {
   padding-top: 48px;
   color: #ffffff;
@@ -215,18 +304,24 @@ body {
 }
 .footer-title {
   margin-bottom: 21px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03px;
   text-transform: uppercase;
 }
+
 .copyright {
-  padding-top: 28px;
+  margin-top: 28px;
+  padding-top: 18px;
   padding-bottom: 21px;
+
+  text-align: center;
   font-weight: normal;
   font-size: 12px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
