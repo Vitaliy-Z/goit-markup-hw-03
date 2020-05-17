@@ -8,43 +8,49 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header>
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="accent">Web</span> Studio
-        </a>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo">
+            <span class="accent">Web</span> Studio
+          </a>
+          <ul class="site-nav">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
         <ul class="site-nav">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li>
+            <img src="./img/post.svg" alt="Почта" />
+            <a href="mailto:info@devstudio.com" class="contact"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <img src="./img/tel.svg" alt="Телефон" />
+            <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="site-nav">
-        <li>
-          <img src="./img/post.svg" alt="Почта" />
-          <a href="mailto:info@devstudio.com" class="contact"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <img src="./img/tel.svg" alt="Телефон" />
-          <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Основаня страница -->
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-text">эффективные решения для вашего бизнеса</h1>
         <input type="button" value="Заказать услугу" class="button" />
       </section>
       <!-- Наши преимущества -->
-      <section class="features">
+      <section class="features container">
         <h2 style="display: none;">Наши преимущества</h2>
         <ul>
           <li>
@@ -56,7 +62,7 @@
             </p>
           </li>
           <li>
-            <img src="./img/features/clock1.svg" alt="Часы" />
+            <img src="./img/features/clock1.svg" alt="Часы" class="link" />
             <h3 class="title-text">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
@@ -64,7 +70,11 @@
             </p>
           </li>
           <li>
-            <img src="./img/features/diagram1.svg" alt="Диаграмма" />
+            <img
+              src="./img/features/diagram1.svg"
+              alt="Диаграмма"
+              class="link"
+            />
             <h3 class="title-text" -text>Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
@@ -72,7 +82,11 @@
             </p>
           </li>
           <li>
-            <img src="./img/features/astonaut1.svg" alt="Астронавт" />
+            <img
+              src="./img/features/astonaut1.svg"
+              alt="Астронавт"
+              class="link"
+            />
             <h3 class="title-text">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -82,7 +96,7 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="activity">
+      <section class="activity container">
         <h2 class="title">Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -115,9 +129,10 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="teams">
+      <section class="teams container">
         <h2 class="title">Наша команда</h2>
         <ul>
+          <img src="./img/social_links/linkedin.svg" alt="" />
           <!-- Джон Смит -->
           <li>
             <img
@@ -304,7 +319,7 @@
         </ul>
       </section>
       <!-- Постоянные клиенты -->
-      <section class="clients">
+      <section class="clients container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul>
           <li>
@@ -365,7 +380,7 @@
       </section>
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <footer class="footer container">
       <!-- Адрес -->
       <div>
         <a href="./index.html" class="logo">
