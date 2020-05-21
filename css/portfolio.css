@@ -13,9 +13,20 @@ body {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin: auto;
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   /* outline: 2px solid tomato; */
 }
@@ -198,7 +209,8 @@ body {
 
 .works .link-img {
   display: block;
-  width: 360px;
+  width: 370px;
+  height: 294px;
 }
 
 .works .item {
@@ -278,16 +290,22 @@ body {
 }
 
 .footer .address {
-  line-height: 1.7;
+  width: 231px;
+  line-height: 1.32;
   color: rgb(255, 255, 255, 0, 6);
 }
 
-.address-text {
+.footer .address-text {
+  display: block;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 
-.address .link {
+.footer .address .link {
   text-decoration: none;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -295,9 +313,16 @@ body {
   font-size: 14px;
   letter-spacing: 0.03px;
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
 
-.footer .title {
+.footer .address-text,
+.address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer .text-title {
   display: block;
   margin-bottom: 21px;
 
