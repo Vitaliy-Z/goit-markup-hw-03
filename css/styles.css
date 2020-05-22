@@ -436,6 +436,10 @@ body {
   margin-right: 11px;
 }
 
+.footer .mailing {
+  width: 570px;
+}
+
 .copyright {
   padding-top: 18px;
   padding-bottom: 21px;

@@ -116,7 +116,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
 }
 
 .site-nav .item:not(:last-child) {
@@ -134,7 +134,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:not(:last-child) {
@@ -149,7 +149,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .item-contact:not(:last-child) {
@@ -188,7 +188,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--primary-bg-button-color);
 
@@ -239,14 +239,14 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06px;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .works .text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .works .hf-text {
@@ -255,7 +255,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.6;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
 }
@@ -311,7 +311,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
@@ -328,7 +328,7 @@ body {
 
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -345,6 +345,10 @@ body {
   margin-right: 11px;
 }
 
+.footer .mailing {
+  width: 570px;
+}
+
 .copyright {
   padding-top: 18px;
   padding-bottom: 21px;
@@ -352,7 +356,7 @@ body {
   text-align: center;
   font-weight: normal;
   font-size: 12px;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
