@@ -273,12 +273,12 @@ body {
 
 .footer .elements {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
 }
 
 .footer .footer-address {
   margin-bottom: 28px;
+  margin-right: 69px;
 }
 
 .footer .logo {
@@ -330,6 +330,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer .social {
+  margin-right: 94px;
 }
 
 .social .link {
